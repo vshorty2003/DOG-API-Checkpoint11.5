@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Thinkful Simple GET Requests API assignment"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dog API GET Request</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="container">
+      <h1 class="display-4 mb-4">Dog API: Simple GET Request</h1>
+      <hr />
+      <div id="input"></div>
+      <form id="dog-num-form">
+        <div class="form-group">
+          <h4>How many dog photos do you want between 3-50?</h4>
+          <input
+            type="text"
+            id="num-dog"
+            class="form-control"
+            placeholder="Default photo # is 3"
+            required
+          />
+        </div>
+        <div class="button">
+          <input
+            type="submit"
+            id="get"
+            class="btn btn-primary mr-4 get-dog-btn"
+            value="Get Dog Photo!"
+          />
+        </div>
+        <div class="results hidden"> 
+ <h4>Here's your dog pictures!!</h4>
+</div>
+      </form>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="logic.js"></script>
+  </body>
+</html>
